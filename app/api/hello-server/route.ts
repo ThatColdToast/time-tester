@@ -1,3 +1,3 @@
 export const GET = async (req: Request) => {
-    return new Response("Hello World")
+    return new Response("Hello Server")
 }
