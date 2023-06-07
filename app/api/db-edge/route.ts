@@ -6,5 +6,5 @@ export const GET = async (req: Request) => {
     const end = new Date().getTime()
     const diff = end - start
     
-    return new Response("Hello Server - " + json["firstName"] + " - " + diff + "ms")
+    return new Response("Hello Edge - " + json["firstName"] + " - " + diff + "ms")
 }
