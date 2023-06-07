@@ -1,5 +1,8 @@
 export const GET = async (req: Request) => {
+    const start = new Date().getTime()
     const json = await (await fetch('https://dummyjson.com/users/1')).json()
+    const end = new Date().getTime()
+    const diff = end - start
     
-    return new Response("Hello Server - " + json["firstName"])
+    return new Response("Hello Server - " + json["firstName"] + " - " + diff + "ms")
 }
